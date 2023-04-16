@@ -61,7 +61,7 @@ const Dashboard = () => {
                 >
                     <StatBox
                         title="24"
-                        subtitle="Lecturs"
+                        subtitle="Lectures"
                         icon={<AutoStoriesIcon sx={{ color: colors.greenAccent[600], fontSize: '26px', mr: 1 }} />}
                     />
                 </Box>

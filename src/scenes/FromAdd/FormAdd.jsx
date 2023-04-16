@@ -198,7 +198,7 @@ const initialValues = {
     lastName: '',
     email: '',
     phone: '',
-    access: 'User',
+    access: 'Male',
     age: '',
 };
 

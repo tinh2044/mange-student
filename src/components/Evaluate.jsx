@@ -75,7 +75,7 @@ function Evaluate() {
                         alignItems="center"
                         borderBottom={`4px solid ${colors.primary[500]}`}
                         colors={colors.grey[100]}
-                        p="15px"
+                        p="12px 15px"
                     >
                         <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
                             Student : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
@@ -90,7 +90,7 @@ function Evaluate() {
                         alignItems="center"
                         borderBottom={`4px solid ${colors.primary[500]}`}
                         colors={colors.grey[100]}
-                        p="15px"
+                        p="12px 15px"
                     >
                         <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
                             Age : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
@@ -105,7 +105,7 @@ function Evaluate() {
                         alignItems="center"
                         borderBottom={`4px solid ${colors.primary[500]}`}
                         colors={colors.grey[100]}
-                        p="15px"
+                        p="12px 15px"
                     >
                         <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
                             Gender : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
@@ -120,7 +120,7 @@ function Evaluate() {
                         alignItems="center"
                         borderBottom={`4px solid ${colors.primary[500]}`}
                         colors={colors.grey[100]}
-                        p="15px"
+                        p="12px 15px"
                     >
                         <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
                             Address : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
@@ -135,12 +135,27 @@ function Evaluate() {
                         alignItems="center"
                         borderBottom={`4px solid ${colors.primary[500]}`}
                         colors={colors.grey[100]}
-                        p="15px"
+                        p="12px 15px"
                     >
                         <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
                             Email : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
 
                                 {curStudent.email}
+                            </Typography>
+                        </Typography>
+                    </Box>
+                    <Box
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        borderBottom={`4px solid ${colors.primary[500]}`}
+                        colors={colors.grey[100]}
+                        p="12px 15px"
+                    >
+                        <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex' >
+                            Response : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2} maxWidth='64%'>
+
+                                {curStudent.response}
                             </Typography>
                         </Typography>
                     </Box>

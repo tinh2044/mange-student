@@ -51,7 +51,7 @@ const ListItemSideBar = [
                 id: v4(),
 
                 title: 'Student',
-                to: '/team',
+                to: '/student',
                 icon: <PeopleOutlined />,
             },
             {
@@ -65,7 +65,7 @@ const ListItemSideBar = [
                 id: v4(),
 
                 title: 'Tuition',
-                to: '/invoices',
+                to: '/tuition',
                 icon: <ReceiptOutlined />,
             },
         ],
@@ -119,7 +119,7 @@ function LayoutSideBar() {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     const [isCollapsed, setIsCollapsed] = useState(true);
-    const [selected, setSelected] = useState('Dashboard');
+    const [selected, setSelected] = useState('Home');
     const [showMenu, setShowMenu] = useState('');
 
     return (
@@ -217,7 +217,7 @@ function LayoutSideBar() {
                     {/* Item SideBar */}
                     <Box paddingLeft={isCollapsed ? undefined : '10%'} mt={2}>
                         <Item
-                            title="Dashboard"
+                            title="Home"
                             to="/"
                             icon={<HomeOutlined />}
                             selected={selected}
