@@ -28,7 +28,7 @@ const publicRoutes = [
     },
     {
         id: v4(),
-        path: routes.team,
+        path: routes.student,
         component: <Team />,
     },
     {
