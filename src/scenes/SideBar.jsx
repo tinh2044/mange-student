@@ -101,14 +101,14 @@ const ListItemSideBar = [
             {
                 id: v4(),
 
-                title: 'Pie Chart',
+                title: 'Ranks',
                 to: '/pie-chart',
                 icon: <PieChartOutlineOutlined />,
             },
             {
                 id: v4(),
 
-                title: 'Line Chart',
+                title: 'Average',
                 to: '/line-chart',
                 icon: <TimelineOutlined />,
             },

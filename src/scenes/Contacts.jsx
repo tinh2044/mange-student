@@ -15,7 +15,7 @@ const Contacts = ({ noHeader }) => {
 
     const columns = [
         // One Field one Column In Row
-        { field: 'index', headerName: 'ID', flex: 0.1 },
+        { field: 'id', headerName: 'ID', flex: 0.1 },
 
         {
             field: 'name',

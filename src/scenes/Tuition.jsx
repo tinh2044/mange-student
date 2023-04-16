@@ -25,7 +25,7 @@ const Tuition = ({ noHeader }) => {
         },
         {
             field: 'paid',
-            headerName: 'Cost',
+            headerName: 'Tuition',
             flex: 1,
             // Style For Cost
             renderCell: (params) => <Typography color={colors.greenAccent[500]}>{params.row.paid} $</Typography>,

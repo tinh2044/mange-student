@@ -30,9 +30,8 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
 
-                color: tokens('dark').blueAccent[500],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -52,8 +51,6 @@ export const student = [
             {
                 name: 'Geography',
                 color: tokens('dark').redAccent[500],
-
-                color: tokens('dark').redAccent[500],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -72,9 +69,7 @@ export const student = [
             },
             {
                 name: 'Physics',
-                color: tokens('dark').blueAccent[100],
-
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -93,8 +88,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -152,9 +146,7 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
-
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -193,7 +185,7 @@ export const student = [
             },
             {
                 name: 'Physics',
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
 
 
                 marks: [
@@ -214,7 +206,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -270,9 +262,7 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
-
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -292,8 +282,6 @@ export const student = [
             {
                 name: 'Geography',
                 color: tokens('dark').redAccent[500],
-
-                color: tokens('dark').redAccent[500],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -312,9 +300,7 @@ export const student = [
             },
             {
                 name: 'Physics',
-                color: tokens('dark').blueAccent[100],
-
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -333,8 +319,8 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
+
                 marks: [
                     {
                         title: 'Midterm one',
@@ -392,9 +378,9 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
 
-                color: tokens('dark').blueAccent[500],
+
                 marks: [
                     {
                         title: 'Midterm one',
@@ -415,7 +401,7 @@ export const student = [
                 name: 'Geography',
                 color: tokens('dark').redAccent[500],
 
-                color: tokens('dark').redAccent[500],
+
                 marks: [
                     {
                         title: 'Midterm one',
@@ -434,9 +420,9 @@ export const student = [
             },
             {
                 name: 'Physics',
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
 
-                color: tokens('dark').blueAccent[100],
+
                 marks: [
                     {
                         title: 'Midterm one',
@@ -455,8 +441,8 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
+
                 marks: [
                     {
                         title: 'Midterm one',
@@ -512,7 +498,7 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
 
                 marks: [
                     {
@@ -553,7 +539,7 @@ export const student = [
             {
                 name: 'Physics',
 
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -572,7 +558,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -629,7 +615,7 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
 
                 marks: [
                     {
@@ -669,7 +655,7 @@ export const student = [
             },
             {
                 name: 'Physics',
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
 
                 marks: [
                     {
@@ -689,7 +675,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -746,7 +732,7 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
 
                 marks: [
                     {
@@ -786,8 +772,7 @@ export const student = [
             },
             {
                 name: 'Physics',
-
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -806,7 +791,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -863,8 +848,7 @@ export const student = [
             },
             {
                 name: 'Math',
-
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -904,7 +888,7 @@ export const student = [
             {
                 name: 'Physics',
 
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -923,7 +907,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -980,7 +964,7 @@ export const student = [
             },
             {
                 name: 'Math',
-                color: tokens('dark').blueAccent[500],
+                color: tokens('dark').greenAccent[800],
 
                 marks: [
                     {
@@ -1021,7 +1005,7 @@ export const student = [
             },
             {
                 name: 'Physics',
-                color: tokens('dark').blueAccent[100],
+                color: tokens('dark').greenAccent[300],
 
 
                 marks: [
@@ -1042,7 +1026,7 @@ export const student = [
             },
             {
                 name: 'Chemistry',
-                color: tokens('dark').blueAccent[300],
+                color: tokens('dark').redAccent[300],
 
                 marks: [
                     {

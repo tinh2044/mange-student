@@ -20,6 +20,8 @@ function FormAdd({ noHeader }) {
     const isNonMobile = useMediaQuery('(min-width:600px)');
     const handleFormSubmit = (values) => {
         dispatch(actions.addMember(values));
+
+
     };
     const CustomizedSelectForFormik = ({ children, form, field }) => {
         const { name, value } = field;
@@ -80,7 +82,7 @@ function FormAdd({ noHeader }) {
                         name="firstName"
                         error={!!touched.firstName && !!errors.firstName}
                         helperText={touched.firstName && errors.firstName}
-                        sx={{ gridColumn: 'span 4' }}
+                        sx={{ gridColumn: 'span 3' }}
                     />
                     {/* Field Last Name */}
                     <TextField
@@ -94,7 +96,7 @@ function FormAdd({ noHeader }) {
                         name="lastName"
                         error={!!touched.lastName && !!errors.lastName}
                         helperText={touched.lastName && errors.lastName}
-                        sx={{ gridColumn: 'span 6' }}
+                        sx={{ gridColumn: 'span 4' }}
                     />
                     {/* Field age */}
 
@@ -111,6 +113,22 @@ function FormAdd({ noHeader }) {
                         helperText={touched.age && errors.age}
                         sx={{ gridColumn: 'span 2' }}
                     />
+                    {/* Field Gender */}
+
+                    <FormControl sx={{ gridColumn: 'span 3' }}>
+                        <InputLabel id="demo-simple-select-label">Gender</InputLabel>
+
+                        <Field label="" name="gender" component={CustomizedSelectForFormik}>
+                            <MenuItem value="Male">
+                                <MaleIcon sx={{ marginRight: '8px' }} />
+
+                            </MenuItem>
+                            <MenuItem value="Female">
+                                <FemaleIcon sx={{ marginRight: '8px' }} />
+                                Female
+                            </MenuItem>
+                        </Field>
+                    </FormControl>
                     {/* Field Email */}
                     <TextField
                         fullWidth
@@ -123,6 +141,20 @@ function FormAdd({ noHeader }) {
                         name="email"
                         error={!!touched.email && !!errors.email}
                         helperText={touched.email && errors.email}
+                        sx={{ gridColumn: 'span 4' }}
+                    />
+                    {/* Field Email */}
+                    <TextField
+                        fullWidth
+                        variant="filled"
+                        type="text"
+                        label="Address"
+                        onBlur={handleBlur}
+                        onChange={handleChange}
+                        value={values.address}
+                        name="address"
+                        error={!!touched.address && !!errors.address}
+                        helperText={touched.address && errors.address}
                         sx={{ gridColumn: 'span 5' }}
                     />
                     {/* Field Phone */}
@@ -137,24 +169,9 @@ function FormAdd({ noHeader }) {
                         name="phone"
                         error={!!touched.phone && !!errors.phone}
                         helperText={touched.phone && errors.phone}
-                        sx={{ gridColumn: 'span 4' }}
+                        sx={{ gridColumn: 'span 3' }}
                     />
-                    {/* Field Access */}
 
-                    <FormControl sx={{ gridColumn: 'span 3' }}>
-                        <InputLabel id="demo-simple-select-label">Gender</InputLabel>
-
-                        <Field label="" name="access" component={CustomizedSelectForFormik}>
-                            <MenuItem value="Male">
-                                <MaleIcon sx={{ marginRight: '8px' }} />
-
-                            </MenuItem>
-                            <MenuItem value="Female">
-                                <FemaleIcon sx={{ marginRight: '8px' }} />
-                                Female
-                            </MenuItem>
-                        </Field>
-                    </FormControl>
                 </Box>
                 {/* Button Submit */}
                 <Box display="flex" justifyContent="end" mt="20px">
@@ -172,7 +189,7 @@ function FormAdd({ noHeader }) {
     };
     return (
         <Box m="20px">
-            {!noHeader && <Header title="CREATE USER" subtitle="Create a New User Profile" />}
+            {!noHeader && <Header title="CREATE STUDENT" subtitle="Create a new student" />}
             {/* Form */}
             <Formik onSubmit={handleFormSubmit} initialValues={initialValues} validationSchema={checkoutSchema}>
                 {RenderForm}
@@ -189,7 +206,7 @@ const checkoutSchema = yup.object().shape({
     lastName: yup.string().required('required'),
     email: yup.string().email('invalid email').required('required'),
     phone: yup.string().matches(phoneRegExp, 'Phone number is not valid').required('required'),
-    address1: yup.string().required('required'),
+    address: yup.string().required('required'),
 
     age: yup.number().required('required'),
 });
@@ -200,6 +217,7 @@ const initialValues = {
     phone: '',
     access: 'Male',
     age: '',
+    address: "",
 };
 
 export default FormAdd;
