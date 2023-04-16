@@ -10,6 +10,7 @@ import { selectNameStudent, selectStudent } from '../redux/selector';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { v4 } from 'uuid';
+import { DataGrid } from '@mui/x-data-grid';
 
 function Evaluate() {
     const theme = useTheme();
@@ -22,7 +23,6 @@ function Evaluate() {
     const nameStudent = useSelector(selectNameStudent)
 
     const handleFilter = (e) => {
-        // console.log(e)
         if (typeof (e.target.innerText) === 'string') {
 
             const student = listStudent.find(item => item.name === e.target.innerHTML)
@@ -37,6 +37,8 @@ function Evaluate() {
             setCurStudent(student)
         }
     }
+
+
     return (
         <React.Fragment>
             <Box gridColumn="span 8" height='350px' gridRow="span 2" backgroundColor={colors.primary[400]}>
@@ -48,7 +50,7 @@ function Evaluate() {
 
                     </Box>
                     <Box>
-                        <Box display="flex" width='200px' backgroundColor={colors.primary[200]} borderRadius="4px">
+                        <Box display="flex" width='200px' backgroundColor={colors.primary[400]} borderRadius="4px">
                             <Autocomplete
                                 // disablePortal
                                 id="combo-box-demo"
@@ -65,83 +67,85 @@ function Evaluate() {
                     <LineChart isDashboard={true} dataChart={dataChart} />
                 </Box>
             </Box>
-            <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]} overflow="auto">
-                <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    borderBottom={`4px solid ${colors.primary[500]}`}
-                    colors={colors.grey[100]}
-                    p="15px"
-                >
-                    <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
-                        Student : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
+            {dataChart.length > 0 && (
+                <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]} overflow="auto">
+                    <Box
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        borderBottom={`4px solid ${colors.primary[500]}`}
+                        colors={colors.grey[100]}
+                        p="15px"
+                    >
+                        <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
+                            Student : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
 
-                            {curStudent.name}
+                                {curStudent.name}
+                            </Typography>
                         </Typography>
-                    </Typography>
-                </Box>
-                <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    borderBottom={`4px solid ${colors.primary[500]}`}
-                    colors={colors.grey[100]}
-                    p="15px"
-                >
-                    <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
-                        Age : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
+                    </Box>
+                    <Box
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        borderBottom={`4px solid ${colors.primary[500]}`}
+                        colors={colors.grey[100]}
+                        p="15px"
+                    >
+                        <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
+                            Age : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
 
-                            {curStudent.age}
+                                {curStudent.age}
+                            </Typography>
                         </Typography>
-                    </Typography>
-                </Box>
-                <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    borderBottom={`4px solid ${colors.primary[500]}`}
-                    colors={colors.grey[100]}
-                    p="15px"
-                >
-                    <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
-                        Gender : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
+                    </Box>
+                    <Box
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        borderBottom={`4px solid ${colors.primary[500]}`}
+                        colors={colors.grey[100]}
+                        p="15px"
+                    >
+                        <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
+                            Gender : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
 
-                            {curStudent.gender}
+                                {curStudent.gender}
+                            </Typography>
                         </Typography>
-                    </Typography>
-                </Box>
-                <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    borderBottom={`4px solid ${colors.primary[500]}`}
-                    colors={colors.grey[100]}
-                    p="15px"
-                >
-                    <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
-                        Address : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
+                    </Box>
+                    <Box
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        borderBottom={`4px solid ${colors.primary[500]}`}
+                        colors={colors.grey[100]}
+                        p="15px"
+                    >
+                        <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
+                            Address : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
 
-                            {curStudent.address}
+                                {curStudent.address}
+                            </Typography>
                         </Typography>
-                    </Typography>
-                </Box>
-                <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    borderBottom={`4px solid ${colors.primary[500]}`}
-                    colors={colors.grey[100]}
-                    p="15px"
-                >
-                    <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
-                        Email : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
+                    </Box>
+                    <Box
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        borderBottom={`4px solid ${colors.primary[500]}`}
+                        colors={colors.grey[100]}
+                        p="15px"
+                    >
+                        <Typography color={colors.grey[100]} variant="h5" fontWeight="600" display='flex'>
+                            Email : <Typography color={colors.greenAccent[500]} variant="h5" fontWeight="400" ml={2}>
 
-                            {curStudent.email}
+                                {curStudent.email}
+                            </Typography>
                         </Typography>
-                    </Typography>
+                    </Box>
                 </Box>
-            </Box>
+            )}
         </React.Fragment>
     )
 }

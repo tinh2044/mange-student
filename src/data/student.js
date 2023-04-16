@@ -143,10 +143,10 @@ export const student = [
                         point: 4.2,
                     }, {
                         title: 'Midterm two',
-                        point: 6.5
+                        point: 3.5
                     }, {
                         title: 'Second Semester',
-                        point: 6.7
+                        point: 5.7
                     },
                 ]
             },
@@ -161,10 +161,10 @@ export const student = [
                         point: 5.4,
                     }, {
                         title: 'Firts Semester',
-                        point: 7,
+                        point: 4,
                     }, {
                         title: 'Midterm two',
-                        point: 10,
+                        point: 2,
                     }, {
                         title: 'Second Semester',
                         point: 4.9
@@ -175,17 +175,16 @@ export const student = [
                 name: 'Geography',
                 color: tokens('dark').redAccent[500],
 
-                color: tokens('dark').redAccent[500],
                 marks: [
                     {
                         title: 'Midterm one',
-                        point: 10,
+                        point: 4,
                     }, {
                         title: 'Firts Semester',
-                        point: 8.5,
+                        point: 6.5,
                     }, {
                         title: 'Midterm two',
-                        point: 10,
+                        point: 6,
                     }, {
                         title: 'Second Semester',
                         point: 8
@@ -196,17 +195,17 @@ export const student = [
                 name: 'Physics',
                 color: tokens('dark').blueAccent[100],
 
-                color: tokens('dark').blueAccent[100],
+
                 marks: [
                     {
                         title: 'Midterm one',
-                        point: 10,
+                        point: 5.6,
                     }, {
                         title: 'Firts Semester',
-                        point: 9.5,
+                        point: 4.5,
                     }, {
                         title: 'Midterm two',
-                        point: 10,
+                        point: 3.4,
                     }, {
                         title: 'Second Semester',
                         point: 3.1
@@ -216,17 +215,16 @@ export const student = [
             {
                 name: 'Chemistry',
                 color: tokens('dark').blueAccent[300],
-                color: tokens('dark').blueAccent[300],
                 marks: [
                     {
                         title: 'Midterm one',
                         point: 6.3,
                     }, {
                         title: 'Firts Semester',
-                        point: 10,
+                        point: 4.3,
                     }, {
                         title: 'Midterm two',
-                        point: 6.9,
+                        point: 5.4,
                     }, {
                         title: 'Second Semester',
                         point: 4
@@ -633,7 +631,6 @@ export const student = [
                 name: 'Math',
                 color: tokens('dark').blueAccent[500],
 
-                color: tokens('dark').blueAccent[500],
                 marks: [
                     {
                         title: 'Midterm one',
@@ -1076,243 +1073,6 @@ export const student = [
 
 
 
-export const mockBarData = [
-    {
-        'hot dog': 137,
-        'hot dogColor': 'hsl(229, 70%, 50%)',
-        burger: 96,
-        burgerColor: 'hsl(296, 70%, 50%)',
-        kebab: 72,
-        kebabColor: 'hsl(97, 70%, 50%)',
-        donut: 140,
-        donutColor: 'hsl(340, 70%, 50%)',
-    },
-    {
-        'hot dog': 55,
-        'hot dogColor': 'hsl(307, 70%, 50%)',
-        burger: 28,
-        burgerColor: 'hsl(111, 70%, 50%)',
-        kebab: 58,
-        kebabColor: 'hsl(273, 70%, 50%)',
-        donut: 29,
-        donutColor: 'hsl(275, 70%, 50%)',
-    },
-    {
-        'hot dog': 109,
-        'hot dogColor': 'hsl(72, 70%, 50%)',
-        burger: 23,
-        burgerColor: 'hsl(96, 70%, 50%)',
-        kebab: 34,
-        kebabColor: 'hsl(106, 70%, 50%)',
-        donut: 152,
-        donutColor: 'hsl(256, 70%, 50%)',
-    },
-    {
-        'hot dog': 133,
-        'hot dogColor': 'hsl(257, 70%, 50%)',
-        burger: 52,
-        burgerColor: 'hsl(326, 70%, 50%)',
-        kebab: 43,
-        kebabColor: 'hsl(110, 70%, 50%)',
-        donut: 83,
-        donutColor: 'hsl(9, 70%, 50%)',
-    },
-    {
-        'hot dog': 81,
-        'hot dogColor': 'hsl(190, 70%, 50%)',
-        burger: 80,
-        burgerColor: 'hsl(325, 70%, 50%)',
-        kebab: 112,
-        kebabColor: 'hsl(54, 70%, 50%)',
-        donut: 35,
-        donutColor: 'hsl(285, 70%, 50%)',
-    },
-    {
-        'hot dog': 66,
-        'hot dogColor': 'hsl(208, 70%, 50%)',
-        burger: 111,
-        burgerColor: 'hsl(334, 70%, 50%)',
-        kebab: 167,
-        kebabColor: 'hsl(182, 70%, 50%)',
-        donut: 18,
-        donutColor: 'hsl(76, 70%, 50%)',
-    },
-    {
-        'hot dog': 80,
-        'hot dogColor': 'hsl(87, 70%, 50%)',
-        burger: 47,
-        burgerColor: 'hsl(141, 70%, 50%)',
-        kebab: 158,
-        kebabColor: 'hsl(224, 70%, 50%)',
-        donut: 49,
-        donutColor: 'hsl(274, 70%, 50%)',
-    },
-];
-
-export const mockPieData = [
-    {
-        id: 'sass',
-        label: 'sass',
-        value: 557,
-        color: 'hsl(191, 70%, 50%)',
-    },
-    {
-        id: 'python',
-        label: 'python',
-        value: 61,
-        color: 'hsl(108, 70%, 50%)',
-    },
-    {
-        id: 'css',
-        label: 'css',
-        value: 301,
-        color: 'hsl(253, 70%, 50%)',
-    },
-    {
-        id: 'java',
-        label: 'java',
-        value: 418,
-        color: 'hsl(338, 70%, 50%)',
-    },
-    {
-        id: 'C++',
-        label: 'C++',
-        value: 183,
-        color: 'hsl(249, 70%, 50%)',
-    },
-];
-
-export const mockLineData = [
-    {
-
-        id: 'Math',
-        color: tokens('dark').blueAccent[300],
-        data: [
-            {
-                x: 'Midterm one',
-                y: 8.5,
-            },
-            {
-                x: 'Firts Semester',
-                y: 8,
-            },
-            {
-                x: 'MidTerm two',
-                y: 9,
-            },
-            {
-                x: 'Term two',
-                y: 6,
-            },
 
 
-
-        ],
-    },
-    {
-
-        id: 'Physics',
-        color: tokens('dark').blueAccent[100],
-        data: [
-            {
-                x: 'Midterm one',
-                y: 8.5,
-            },
-            {
-                x: 'Firts Semester',
-                y: 4,
-            },
-            {
-                x: 'MidTerm two',
-                y: 5,
-            },
-            {
-                x: 'Term two',
-                y: 7,
-            },
-
-
-
-        ],
-    },
-    {
-
-        id: 'Chemistry',
-        color: tokens('dark').redAccent[100],
-        data: [
-            {
-                x: 'Midterm one',
-                y: 7.5,
-            },
-            {
-                x: 'Firts Semester',
-                y: 6,
-            },
-            {
-                x: 'MidTerm two',
-                y: 8,
-            },
-            {
-                x: 'Term two',
-                y: 5.7,
-            },
-
-
-
-        ],
-    },
-    {
-
-        id: 'History',
-        color: tokens('dark').redAccent[500],
-        data: [
-            {
-                x: 'Midterm one',
-                y: 9.0,
-            },
-            {
-                x: 'Firts Semester',
-                y: 8.6,
-            },
-            {
-                x: 'MidTerm two',
-                y: 7.9,
-            },
-            {
-                x: 'Term two',
-                y: 9.4,
-            },
-
-
-
-        ],
-    },
-    {
-
-        id: 'Geography',
-        color: tokens('dark').blueAccent[500],
-        data: [
-            {
-                x: 'Midterm one',
-                y: 8.9,
-            },
-            {
-                x: 'Firts Semester',
-                y: 4.5,
-            },
-            {
-                x: 'MidTerm two',
-                y: 4.6,
-            },
-            {
-                x: 'Term two',
-                y: 9.7,
-            },
-
-
-
-        ],
-    },
-
-];
 

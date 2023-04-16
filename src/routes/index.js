@@ -1,10 +1,8 @@
 import { v4 } from 'uuid';
 import {
-    BarChart,
     Calendar,
     Contacts,
     Dashboard,
-    Faq,
     FormAdd,
     Invoices,
     LineChart,
@@ -13,16 +11,13 @@ import {
 } from '../scenes';
 const routes = {
     dashboard: '/',
-    team: '/team',
+    student: '/student',
     contact: '/contact',
-    invoices: '/invoices',
+    tuition: '/tuition',
     form: '/add-student',
     calendar: '/calendar',
-    faq: '/faq',
-    barChart: '/bar-chart',
     pieChart: '/pie-chart',
     lineChart: '/line-chart',
-    geoChart: '/geo-chart',
 };
 
 const publicRoutes = [
@@ -43,7 +38,7 @@ const publicRoutes = [
     },
     {
         id: v4(),
-        path: routes.invoices,
+        path: routes.tuition,
         component: <Invoices />,
     },
     {
@@ -56,16 +51,7 @@ const publicRoutes = [
         path: routes.calendar,
         component: <Calendar />,
     },
-    {
-        id: v4(),
-        path: routes.faq,
-        component: <Faq />,
-    },
-    {
-        id: v4(),
-        path: routes.barChart,
-        component: <BarChart />,
-    },
+
     {
         id: v4(),
         path: routes.pieChart,

@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography, useTheme } from '@mui/material';
 import { tokens } from '../theme';
-import { mockTransactions } from '../data/mockData';
+import { mockTransactions } from '../data/student';
 import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { BsPersonVcard } from 'react-icons/bs'
@@ -10,14 +10,11 @@ import Header from '../components/Header';
 import StatBox from '../components/StatBox';
 import Evaluate from '../components/Evaluate';
 import { useSelector } from 'react-redux';
-import { selectStudent, selectTuition } from '../redux/selector';
+import { selectStudent } from '../redux/selector';
 
 const Dashboard = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
-
-    const student = useSelector(selectStudent)
-
 
     return (
         <Box m="20px">
@@ -83,9 +80,6 @@ const Dashboard = () => {
                 </Box>
 
                 {/* ROW 2 */}
-
-
-
                 <Evaluate />
             </Box>
         </Box>

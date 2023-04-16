@@ -1,11 +1,10 @@
 import { Box, Typography, useTheme } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import { tokens } from '../theme';
-// import { mockDataInvoices } from '../data/mockData';
 import Header from '../components/Header';
 import { useSelector } from 'react-redux';
 
-const Invoices = ({ noHeader }) => {
+const Tuition = ({ noHeader }) => {
     const theme = useTheme();
     const data = useSelector((state) => state.student);
     const colors = tokens(theme.palette.mode);
@@ -57,7 +56,7 @@ const Invoices = ({ noHeader }) => {
     return (
         <Box>
             {/* No Header At DashBoard */}
-            {!noHeader && <Header title="INVOICES" subtitle="List of Invoice Balances" />}
+            {!noHeader && <Header title="Tuition" subtitle="List of Invoice Balances" />}
             <Box
                 m="12px 0 0 0"
                 height="75vh"
@@ -98,4 +97,4 @@ const Invoices = ({ noHeader }) => {
     );
 };
 
-export default Invoices;
+export default Tuition;

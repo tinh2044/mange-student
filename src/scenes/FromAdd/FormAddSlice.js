@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { v4 } from 'uuid';
-import { student } from '../../data/mockData';
+import { student } from '../../data/student';
 
 const formAddSlice = createSlice({
     name: 'student',

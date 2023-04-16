@@ -90,13 +90,6 @@ const ListItemSideBar = [
                 to: '/calendar',
                 icon: <CalendarTodayOutlined />,
             },
-            {
-                id: v4(),
-
-                title: 'FAQ Page',
-                to: '/faq',
-                icon: <HelpOutlineOutlined />,
-            },
         ],
     },
     {
@@ -105,13 +98,6 @@ const ListItemSideBar = [
         title: 'Charts',
         icon: <SsidChartOutlined />,
         item: [
-            {
-                id: v4(),
-
-                title: 'Bar Chart',
-                to: '/bar-chart',
-                icon: <BarChartOutlined />,
-            },
             {
                 id: v4(),
 
@@ -125,13 +111,6 @@ const ListItemSideBar = [
                 title: 'Line Chart',
                 to: '/line-chart',
                 icon: <TimelineOutlined />,
-            },
-            {
-                id: v4(),
-
-                title: 'Geography Chart',
-                to: '/geo-chart',
-                icon: <MapOutlined />,
             },
         ],
     },

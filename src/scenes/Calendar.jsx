@@ -15,7 +15,6 @@ function Calendar() {
     const [crrEvents, setCrrEvents] = useState([]);
 
     const handleDateClick = (selected) => {
-        console.log(selected);
         const title = prompt('Please enter new title');
         const calendarApi = selected.view.calendar;
         calendarApi.unselect();

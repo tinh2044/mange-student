@@ -1,14 +1,63 @@
 import { ResponsivePie } from '@nivo/pie';
 import { tokens } from '../theme';
 import { useTheme } from '@mui/material';
-import { mockPieData as data } from '../data/mockData';
+import { useSelector } from 'react-redux';
+import { selectStudent } from '../redux/selector';
+// import { mockPieData as data } from '../data/student';
 
 function PieChart() {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
+
+    const listStudent = useSelector(selectStudent)
+
+    const rank = {
+        "Great": {
+            point: 0,
+            color: colors.blueAccent[500]
+        },
+        "Medium": {
+            point: 0,
+            color: colors.redAccent[500]
+        },
+        "Left": {
+            point: 0,
+            color: colors.greenAccent[500]
+
+        },
+    }
+
+    listStudent.forEach((student) => {
+        let total = student.subjects.reduce((value, subject, index, arr) => {
+
+            return value + subject.marks.reduce((value, mark, index, arr) => {
+                return value + mark.point / arr.length
+            }, 0)
+        }, 0) / student.subjects.length
+
+        if (total >= 7) {
+            rank.Great.point += 1
+        } else if (total >= 6) {
+            rank.Medium.point += 1
+        } else {
+            rank.Left.point += 1
+        }
+    })
+
+
+
+    const dataChart = Object.keys(rank).map(key => {
+        return {
+            id: key,
+            label: key,
+            value: rank[key].point,
+            color: rank[key].color
+        }
+    })
+    console.log(dataChart)
     return (
         <ResponsivePie
-            data={data}
+            data={dataChart}
             margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
             valueFormat=" >-"
             sortByValue={true}
@@ -29,76 +78,7 @@ function PieChart() {
             arcLinkLabelsColor={colors.primary[300]}
             arcLabelsRadiusOffset={0.45}
             arcLabelsTextColor={colors.grey[900]}
-            defs={[
-                {
-                    id: 'dots',
-                    type: 'patternDots',
-                    background: 'inherit',
-                    color: 'rgba(255, 255, 255, 0.3)',
-                    size: 4,
-                    padding: 1,
-                    stagger: true,
-                },
-                {
-                    id: 'lines',
-                    type: 'patternLines',
-                    background: 'inherit',
-                    color: 'rgba(255, 255, 255, 0.3)',
-                    rotation: -45,
-                    lineWidth: 6,
-                    spacing: 10,
-                },
-            ]}
-            fill={[
-                {
-                    match: {
-                        id: 'ruby',
-                    },
-                    id: 'dots',
-                },
-                {
-                    match: {
-                        id: 'c',
-                    },
-                    id: 'dots',
-                },
-                {
-                    match: {
-                        id: 'go',
-                    },
-                    id: 'dots',
-                },
-                {
-                    match: {
-                        id: 'python',
-                    },
-                    id: 'dots',
-                },
-                {
-                    match: {
-                        id: 'scala',
-                    },
-                    id: 'lines',
-                },
-                {
-                    match: {
-                        id: 'lisp',
-                    },
-                    id: 'lines',
-                },
-                {
-                    match: {
-                        id: 'elixir',
-                    },
-                    id: 'lines',
-                },
-                {
-                    match: {
-                        id: 'javascript',
-                    },
-                    id: 'lines',
-                },
-            ]}
+            isInteractive={false}
             legends={[
                 {
                     anchor: 'bottom',

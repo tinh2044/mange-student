@@ -2,9 +2,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ColorModeContext, useMode } from './theme';
 import { Route, Routes } from 'react-router-dom';
 import { ProSidebarProvider } from 'react-pro-sidebar';
-import { /* `LayoutSideBar` is rendering the sidebar component of the application layout. */
-    LayoutSideBar, NavBar
-} from './scenes';
+import { LayoutSideBar, NavBar } from './scenes';
 import publicRoutes from './routes';
 function App() {
     const [theme, colorMode] = useMode();
